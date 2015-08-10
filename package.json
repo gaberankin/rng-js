@@ -1,15 +1,12 @@
 {
   "name": "rng-js",
   "version": "1.0.1",
-  "description": "Seedable random number generator functions.",
+  "description": "Seedable random number generator functions.  Original can be found at https://github.com/skeeto/rng-js",
   "browser": "rng.js",
-  "main": "index.js",
-  "scripts": {
-    "test": "tap test/*.js"
-  },
+  "main": "rng.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/skeeto/rng-js.git"
+    "url": "git://github.com/gaberankin/rng-js.git"
   },
   "keywords": [
     "random",
@@ -22,20 +19,7 @@
   "author": "Christopher Wellons <wellons@nullprogram.com>",
   "license": "Unlicence",
   "bugs": {
-    "url": "https://github.com/skeeto/rng-js/issues"
+    "url": "https://github.com/gaberankin/rng-js/issues"
   },
-  "homepage": "https://github.com/skeeto/rng-js",
-  "devDependencies": {
-    "browserify": "~3.20.0",
-    "browserify-shim": "~3.1.5",
-    "tap": "~0.4.8"
-  },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
-  },
-  "browserify-shim": {
-    "./rng.js": "RNG"
-  }
+  "homepage": "https://github.com/skeeto/rng-js"
 }

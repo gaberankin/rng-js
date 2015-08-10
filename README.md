@@ -48,9 +48,3 @@ dice(); // => 11
 var RNG = require('rng');
 ```
 
-This module can also be [browserified][browserify] thanks to
-[browserify-shim][shim].
-
-
-[browserify]: https://github.com/substack/node-browserify
-[shim]: https://github.com/thlorenz/browserify-shim

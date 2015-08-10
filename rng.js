@@ -11,6 +11,8 @@
  * rng.exponential();   // =>  1.0547367609131555
  * rng.poisson(4);      // =>  2
  * rng.gamma(4);        // =>  2.781724687386858
+ * 
+ * Modified by @gaberankin for better node support (no browserify or weird index.js thing)
  */
 
 /**
@@ -229,5 +231,4 @@ RNG.roller = function(expr, rng) {
     };
 };
 
-/* Provide a pre-made generator instance. */
-RNG.$ = new RNG();
+module.exports = RNG;
