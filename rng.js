@@ -144,6 +144,12 @@ RNG.prototype.random = function(n, m) {
     return n + Math.floor(this.uniform() * (m - n));
 };
 
+//set up a few functions i need in general
+RNG.prototype.intBetween = RNG.prototype.random;
+RNG.prototype.floatBetween = function(n, m) {
+    return n + (this.uniform() * (m - n));
+};
+
 /**
  * Generates numbers using this.uniform() with the Box-Muller transform.
  * @returns {number} Normally-distributed random number of mean 0, variance 1.
